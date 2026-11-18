@@ -81,7 +81,7 @@ html, body {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .sidebar-toggle-btn:hover {
@@ -164,7 +164,7 @@ html, body {
   padding: 0 64px 0 32px;
   color: var(--gh-text-primary);
   font-size: 12.5px;
-  outline: none;
+  outline: 2px solid transparent; outline-offset: 2px;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -205,7 +205,7 @@ html, body {
   gap: 6px;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .header-btn:hover {
@@ -288,7 +288,7 @@ html, body {
   font-weight: 500;
   cursor: pointer;
   text-align: left;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .nav-item-left {
@@ -468,7 +468,7 @@ html, body {
   align-items: center;
   gap: 7px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .tab-btn:hover {
@@ -625,7 +625,7 @@ html, body {
   font-size: 12px;
   line-height: 1.5;
   resize: vertical;
-  outline: none;
+  outline: 2px solid transparent; outline-offset: 2px;
 }
 
 .copy-textarea:focus {
@@ -702,7 +702,7 @@ html, body {
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-copy:hover {
@@ -729,7 +729,7 @@ html, body {
   gap: 5px;
   cursor: pointer;
   text-decoration: none;
-  transition: all 0.15s ease;
+  transition: transform 0.15s ease, opacity 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
 }
 
 .btn-secondary:hover {
@@ -948,4 +948,11 @@ html, body {
   .cards-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Accessible keyboard focus ring (Web Design Guidelines) */
+:focus-visible {
+  outline: 2px solid #58a6ff;
+  outline-offset: 2px;
 }
